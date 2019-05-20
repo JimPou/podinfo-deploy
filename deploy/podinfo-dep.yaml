@@ -5,16 +5,16 @@ metadata:
   name: metrics-demo
   namespace: m-demo
   annotations:
-    flux.weave.works/tag.podinfod: glob:*
+    flux.weave.works/tag.metrics-demo: glob:*
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: podinfo
+      app: metrics-demo
   template:
     metadata:
       labels:
-        app: podinfo
+        app: metrics-demo
       annotations:
         prometheus.io/scrape: 'true'
     spec:
