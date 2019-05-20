@@ -2,16 +2,16 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: podinfo-lb
-  namespace: dev2
+  name: metrics-demo-lb
+  namespace: m-demo
 spec:
   type: LoadBalancer
   ports:
     - port: 80
-      targetPort: 9898
+      targetPort: 3000
       protocol: TCP
       name: http
   selector:
-    app: podinfo
+    app: metrics-demo
 
 
