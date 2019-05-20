@@ -3,7 +3,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: podinfo
-  namespace: dev
+  namespace: dev2
   annotations:
     flux.weave.works/automated: 'true'
     flux.weave.works/tag.podinfod: glob:*

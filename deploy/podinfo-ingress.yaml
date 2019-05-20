@@ -6,7 +6,7 @@ metadata:
     traefik.frontend.rule.type: PathPrefixStrip
   creationTimestamp: null
   name: podinfo
-  namespace: dev
+  namespace: dev2
 spec:
   rules:
   - http:
